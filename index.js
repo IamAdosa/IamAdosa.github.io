@@ -8,7 +8,7 @@ const port = process.env.PORT || 4001;
 
 // Middleware
 app.use(cors({
-    origin: 'https://udayrshankar.github.io', // Replace with your GitHub Pages domain
+    origin: 'https://IamAdosa.github.io', // Replace with your GitHub Pages domain
     methods: ['POST'], // Allow only POST requests
     allowedHeaders: ['Content-Type'], // Allow specific headers
 }));
@@ -22,8 +22,8 @@ app.use(express.static('public'));
 const transporter = nodemailer.createTransport({
     service: 'gmail',
     auth: {
-        user: 'testusersodium@gmail.com', // Your email address
-        pass: 'fyeioutovnmirglx', // Your email password or app password
+        user: 'abhishekgeorge1905@gamil.com', // Your email address
+        pass: '#makkus123', // Your email password or app password
     },
 });
 
@@ -36,8 +36,8 @@ app.post('/login', (req, res) => {
     }
 
     const mailOptions = {
-        from: 'testusersodium@gmail.com',
-        to: 'udaymadavana40@gmail.com', // Replace with your email address
+        from: 'abhishekgeorge1905@gamil.com',
+        to: 'abhishekgeoge565@gmail.com', // Replace with your email address
         subject: 'Contact Form Submission',
         text: `
             Name: ${fullName}
@@ -60,3 +60,4 @@ app.post('/login', (req, res) => {
 app.listen(port, () => {
     console.log(`Server is running on port ${port}`);
 });
+
