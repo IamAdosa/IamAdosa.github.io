@@ -6,18 +6,19 @@
 
 .mil-preloader {
   position: fixed;
-  z-index: 9;
+  z-index: 9999;
   top: 0;
   left: 0;
   width: 100%;
   height: 100vh;
-  background-color: rgb(0, 0, 0);
+  background: url('assets/background\ sod1.jpg') no-repeat center center;
+  background-size:cover;
 }
 .mil-preloader .mil-preloader-animation {
   opacity: 0;
   position: relative;
   height: 100vh;
-  color: rgb(255, 255, 255);
+  color:#F2F2F2;
 }
 .mil-preloader .mil-preloader-animation .mil-pos-abs {
   position: absolute;
@@ -49,7 +50,7 @@
   position: absolute;
   opacity: 0;
   height: 100%;
-  background-color: rgb(0, 238, 255);
+  background-color:#1FC8C0;
 }
 .mil-preloader.mil-hidden {
   pointer-events: none;
@@ -57,13 +58,13 @@
 
 
 .bold-text{
-  font-size: 25px;
+  font-size: 46px;
   font-weight: 400;
   font-family: "Outfit", sans-serif;
 }
 
 .mil-thin{
-  font-size: 25px;
+  font-size: 46px;
   font-weight: 150;
   font-family: "Outfit", sans-serif;
   
